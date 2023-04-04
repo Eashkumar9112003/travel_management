@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Booking</title>
+	<style>
+		body{
+			background-image: url("https://media2.giphy.com/media/YXwmthHTL0EgM/giphy.gif");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color:black;
+			}
+		li {
+			float: left;
+			}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+			}
+		li a:hover {
+			background-color: brown;
+			}
+		div{
+			border:15px solidorange;
+	        background-color:grey;
+	        font:50%;
+	        padding:20px;
+	        border-radius:0;
+	        height:450px;
+	        margin-top: 30px;
+	        margin-bottom:;
+	        margin-left:790px;
+	        margin-right:20px;
+	        font-size:20px;
+	        opacity:0.8;
+		}
+        input[type=text]{
+			width: 30%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: ;
+			border: 2px solid brown;
+			border-radius: 4px;
+			box-sizing: border-box;
+			}
+		input[type=Submit]{
+			width: 30%;
+			background-color: brown;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			}
+			input[type=Submit]:hover {
+			background-color: #45a049;
+			}
+			
+		input[type=reset]{
+			width: 30%;
+			background-color: brown;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			}
+		input[type=reset]:hover {
+			background-color: #45a049;
+			}
+		input[type=date], select {
+			width: 30%;
+			padding: 14px 20px;
+			margin: 8px 0;
+			display: ;
+			border: 2px solid brown;
+			border-radius: 4px;
+			cursor: Pointer;
+			}
+	</style>
+</head>
+<body>
+	<ul>
+	<li><a href='homepage.html'><h3>HOME</h3></a></li>
+    <li><a href='LIVE STATUS.html'><h3>TRAIN LIVE STATUS</h3></a></li>
+	<li><a href='pnrstatus.html'><h3>PNR STATUS</h3></a></li>
+	<li><a href='cancellation.html'><h3>CANCELLATION&REFUND RULES</h3></a></li>
+	<li><a href='instructionsreal.html'><h3>INSTRUCTIONS</h3></a></li>
+	<li><a href='Help.html'><h3>HELP?</h3></a></li>
+	<li><a href=''><h3>CONTACT US</h3></a></li>
+    <li><a href='Login.html'><h3>LOGIN</h3></a></li>
+	</ul>
+	<div>
+		<h3><marquee bgcolor="brown">E-TRAIN BOOKING</marquee></h3>
+		<center>
+		<h1>---TICKET BOOKING---</h1>
+		</center>
+		<form action="/action_page.php" name="StudenSignupForm" method="post" target = "_blank" onsubmit="return  validateHTMlform()">
+		<b>From:</b><select type="text" id="fname" name="fname" placeholder="Leaving from....">
+	    <option value ="SELECT">---SELECT---</option>
+		<option value ="ongole">Ongole</option>
+		<option value ="nellore">nellore</option>
+		</select>
+		<b>To:</b><select type="text" id="lname" name="lname" placeholder="Going to...."><br>
+		<option value ="SELECT">---SELECT---</option>
+		<option value ="vizag">vizag</option>
+		<option value ="vijayawada">vijayawada</option>
+		<br>
+		<b>Date:</b><input type="date" name="mydate">	
+		<label for="catagory"><b>Catagory:</b></label>
+	    <select name="mycar" id="car">
+	    <option value="Gen">Genaral</option>
+	    <option value="Ac">SA</option>
+	    <option value="3A">3A TIER AC</option>
+	    <option value="2A">2A TIER AC</option>
+	    </select><br>
+	    <br>
+	    <input type="Submit" value="Search">
+	    <input type="Reset" value="Reset"><br>
+	    <input type="radio" name="Person with disbility concession">person with disbility concession<input type="radio" name="Flexible with date">Flexible with date<br>
+	    <input type="radio" name="Train with avilable brth">Train with avilable brth<input type="radio" name="Railway Pass Concession">Railway Pass Concession
+	    </form>
+	    <script>
+	    function validateHTMlform()
+{
+	 let form = document.StudenSignupForm;
+   if( form.fname.value == "" )
+   {
+     alert( "FILL THE DETAILS" );
+     form.select.focus() ;
+     return;
+       
+   }
+    if( form.lname.value == "" )
+   {
+     alert( "FILL THE DETAILS" );
+     form.select.focus() ;
+     return;
+       
+   }
+   return (true);
+}</script>
+<a href=''><h3>Search</h3></a>
+	</div>
+</body>
+</html>

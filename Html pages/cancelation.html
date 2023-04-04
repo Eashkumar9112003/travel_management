@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cancelation</title>
+	<style>
+		body {
+			background-image: url('https://images.news18.com/ibnlive/uploads/2021/07/1627042937_train-resized.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		p{
+			font-size:20px;
+			color:orange;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color:black;
+			}
+		li {
+			float: left;
+			}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+			}
+		li a:hover {
+			background-color: brown;
+			}
+		div{
+			border:3px;
+	        background-color:red;
+	        border-radius:10px;
+	        margin-top: 120px;
+	        margin-bottom:120px;
+	        margin-left:500px;
+	        margin-right:500px;
+	        padding-top:45px:;
+	        padding-right:45px;
+	        padding-left:45px;
+	        padding-bottom:45px;
+	        font-size:20px;
+	        opacity:0.9;
+	        }
+	    input[type=text]{
+			width: 50%;
+			padding: 10px 20px;
+			margin: 8px 0;
+			display: ;
+			border: 2px solid brown;
+			border-radius: 4px;
+			box-sizing: border-box;
+			}
+		input[type=date]{
+			width: 50%;
+			padding: 10px 20px;
+			margin: 8px 0;
+			display: ;
+			border: 2px solid brown;
+			border-radius: 4px;
+			box-sizing: border-box;
+			}
+	   input[type=Submit]{
+			width: 30%;
+			background-color: brown;
+			color: white;
+			padding: 10px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			}
+		input[type=Reset]{
+			width: 30%;
+			background-color: brown;
+			color: white;
+			padding: 10px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href='homepage.html'><h3>HOME</h3></a></li>
+    <li><a href='LIVE STATUS.html'><h3>TRAIN LIVE STATUS</h3></a></li>
+	<li><a href='pnrstatus.html'><h3>PNR STATUS</h3></a></li>
+	<li><a href='cancelation.html'><h3>CANCELLATION&REFUND RULES</h3></a></li>
+	<li><a href='instructionsreal.html'><h3>INSTRUCTIONS</h3></a></li>
+	<li><a href='Help.html'><h3>HELP?</h3></a></li>
+	<li><a href='#'><h3>CONTACT US</h3></a></li>
+    <li><a href='Login.html'><h3>LOGIN</h3></a></li>
+	</ul>
+	<div>
+		<center>
+		<h2>---Ticket Cancellation---</h2>
+		</center>
+	    <form action="/action_page.php" name="StudenSignupForm" method="post" target = "_blank" onsubmit="return  validateHTMlform()">
+			<b>PNR Number:</b><input type="text" id="ename" placeholder = "Enter PNR Number..."><br>
+			<b>Train Number:</b><input id="fname" type="text" placeholder="Enter TRAIN Number..."><br>
+			<b>Date:</b><input type="date" name="mydate"><br>
+            <input type="Submit" value="Submit">
+	        <input type="Reset" value="Reset"><br>
+	    </form>
+	    <script>
+	    function validateHTMlform()
+{
+	 let form = document.StudenSignupForm;
+   if( form.ename.value == "" )
+   {
+     alert( "Enter 10 DIGITS CORRECTLY!" );
+     form.textname.focus() ;
+     return;   
+   }
+   if( form.fname.value == "" )
+   {
+     alert( "Enter valid ticket number!" );
+     form.textname.focus() ;
+     return;
+       
+   }
+   return (true);
+}
+
+
+</script>
+	        
+	</diV>
+	<h2>Procedure for Cancellation of E-Tickets</h2>
+	<p>e-Tickets can be cancelled on Internet at this website till Chart preparation of the train .Cancellations are not allowed at face to face Railway Counters. If the user wishes to cancel his e-Ticket, he can do so till the time of chart preparation for the train.For train starting up to 12 noon the chart preparation is usually done on the previous night. He can log on to www.irctc.co.in and go to "Booked Tickets" link and select the ticket to be cancelled and can initiate the cancellation by selecting the passengers to be cancelled. Cancellation would be confirmed online and the refund would be credited back to the account used for booking as for normal Internet tickets. If there is any partial cancellation of ticket, please ensure that a fresh e-reservation slip (Electronic Reservation Slip) is printed separately as done for the original ticket. To take you step by step and familiarize you with the procedure for canceling of e-tickets.<br>
+	<b>Cancellation of e-Tickets before chart preparation of the train:</b><br>
+	If a confirmed ticket is cancelled more than 48 hrs before the scheduled departure of the train, flat cancellation charges shall be deducted @ Rs.240/- for AC First Class/Executive Class, Rs.200/- for AC 2 Tier/First Class, Rs. 180 for AC 3 Tier/AC Chair car/ AC 3 Economy, Rs.120/- for Sleeper Class and Rs.60/- for Second Class. Cancellation charges are per passenger. If a confirmed ticket is cancelled within 48 hrs and up to 12 hours before the scheduled departure of the train, cancellation charges shall be 25% of the fare subject to the minimum flat rate mentioned in the above clause. Less than 12 hours and upto four hours before the scheduled departure of the train up to chart preparation which is earlier, 50% of the fare paid subject to the minimum cancellation charges. Note the Chart preparation time is the time for the chart preparation from the Train Originating Station or from the previous chart Preparation station.<br>
+	<b>Cancellation of e-Tickets after the preparation of Reservation charts:</b><br>
+	For Normal User:- E-ticket cannot be cancelled after chart preparation. Users are requested to use the online TDR filing for such cases and track Status of the refund case through tracking service provided by IRCTC.<br>
+	<b>TDR can be filed as per Railway rules:</b><br>
+	No refund of fare shall be admissible on the tickets having confirmed reservation in case the ticket is not cancelled or TDR not filed online upto four hours before the scheduled departure of the train.<br>
+	No refund of fare shall be admissible on RAC e-tickets is case the ticket is not cancelled or TDR not filed online upto thirty minutes before the scheduled departure of the train.<br>
+	In case, on a party e-ticket or a family e-ticket issued for travel of more than one passenger, some passengers have confirmed reservation and others are on RAC or waiting list, full refund of fare , less clerkage, shall be admissible for confirmed passengers also subject to the condition that the ticket shall be cancelled online or online TDR shall be filed for all the passengers upto thirty minutes before the scheduled departure of the train.<br>
+	For filing online TDR, select �File Ticket Deposit Receipt (TDR)� from menu �Services�. For the ticket booked at old site, select �Old Transaction History� from menu �My Transactions� and after getting the password verified select �File TDR� link in the left panel under the "My Transactions" menu. IRCTC will forward the claim to Concerned Railways to process the refund and money of refund amount will be credited back to same account through which payment was made after receiving the same from the concerned Railways. For any other clarifications please mail to etickets@irctc.co.in<br>
+	For Agents :- E-ticket cannot be cancelled after chart preparation. Whenever Agents received such a request from their customers they are required to send a mail to etickets@irctc.co.in containing following details.
+    PNR No.<br>
+    Transaction ID :<br>
+    Train No.<br>
+    From:<br>
+    To:<br>
+    Date of journey:<br>
+    S.No.<br>
+    PASSENGER NAME<br>
+    AGE<br>
+    GENDER<br>
+    Reasons for Filing TDR<br>
+    IRCTC will file TDR and forward the claim to Concerned Railways to process the refund and money of refund amount will be credited back to Agents account through which payment was made after receiving the same from the concerned Railways. For any other clarifications please mail to etickets@irctc.co.in"<br>
+    <b>For Tatkal Tickets Booked as e-Tickets:</b><br>
+    No refund will be granted on cancellation of confirmed Tatkal tickets. For contingent cancellation and waitlisted Tatkal ticket cancellations, charges will be deducted as per existing Railway rules. Partial cancellation of Tatkal e-tickets is allowed .<br>
+    <b>Cancellation of e-tickets in case of trains cancelled:</b><br>
+    If the train is marked as "CANCELLED" in PRS due to breaches, floods, accidents etc. full refund is permissible in case the ticket is cancelled within three days of the scheduled departure of the train. In case of e-tickets, such cancellations can be done by the customer through Internet.</p>
+
+</body>
+</html>

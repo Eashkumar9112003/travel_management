@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><B>E-TRAIN RESERVATION</B></title>
+<style>
+	body{
+		background-image:url("https://thumbs.dreamstime.com/z/indian-railway-one-line-drawing-track-123667561.jpg");
+		background-repeat:no-repeat;
+		animation:change 7s infinite;
+		background-size: cover;
+}
+@keyframes change {
+	50%
+	{
+		background-image:url("https://thumbs.dreamstime.com/z/indian-railway-one-line-drawing-track-123667561.jpg");
+	}
+	50%
+	{
+		background-image:url("https://media.istockphoto.com/photos/india-maharashtra-prospective-image-of-two-indian-train-with-rail-picture-id1194091335?k=20&m=1194091335&s=612x612&w=0&h=78_5uNES-C7z6eQoG0d-AkF9_9HX7GHyeJ420jaTk4w=");
+	}
+}
+div{
+	border:1px light brown;
+	background-color: lightblue;
+	border-radius:10px;
+	margin-top: 150px;
+	margin-bottom:30px;
+	margin-left:800px;
+	margin-right:200px;
+	padding-top:20px;
+	padding-right:10px;
+	padding-left:100px;
+	padding-bottom:30px;
+	font-size:20px;
+	opacity: 0.8;
+	font-color:red;
+}
+
+h1{
+	font-style: italic;
+	font-size:40px;
+}
+form{
+	padding-bottom:25px;
+}
+input[type=submit] {
+  width: 40%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=text], select {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color:black;
+			}
+		li {
+			float: left;
+			}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+			}
+		li a:hover {
+			background-color: brown;
+			}
+</style>
+	</head>
+<body>
+	<ul>
+	<li><a href='homepage.html'><h3>HOME</h3></a></li>
+    <li><a href='LIVE STATUS.html'><h3>TRAIN LIVE STATUS</h3></a></li>
+	<li><a href='pnrstatus.html'><h3>PNR STATUS</h3></a></li>
+	<li><a href='cancellation.html'><h3>CANCELLATION&REFUND RULES</h3></a></li>
+	<li><a href='instructionsreal.html'><h3>INSTRUCTIONS</h3></a></li>
+	<li><a href='Help.html'><h3>HELP?</h3></a></li>
+	<li><a href=''><h3>CONTACT US</h3></a></li>
+    <li><a href='Login.html'><h3>LOGIN</h3></a></li>
+	</ul>
+	 
+<div >
+	<h1>
+	<b>Login</b>
+	</h1>
+	
+<form action="/action_page.php" name="StudenSignupForm" method="post" target = "_blank" onsubmit="return  validateHTMlform()">
+  <label for="fname"><b>USER NAME:</b></label><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter Full Name..." ><br>
+  <label for="lname"><b>PASSWORD:</b></label><br>
+  <input type="text" id="lname" name="lname"placeholder="Enter Password..."> <br>
+  <input type="submit" value="login">
+</form> 
+<a href="https://www.w3schools.com/" style="text-decoration:none;" ><b>Register</b></a><br>
+<br>
+<a href="https://www.w3schools.com/" style="text-decoration:none;">Help?</a>
+</div>
+<script>
+function validateHTMlform()
+{
+	 let form = document.StudenSignupForm;
+   if( form.fname.value == "" )
+   {
+     alert( "Enter Your user Name!" );
+     form.textname.focus() ;
+     return;
+       
+   }
+    if( form.lname.value == "" )
+   {
+     alert( "Enter Your password!" );
+     form.textname.focus() ;
+     return;
+       
+   }
+   return (true);
+}
+
+</script>
+</body>
+</html>
